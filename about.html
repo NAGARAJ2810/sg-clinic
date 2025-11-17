@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - SG Clinic</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Top Info Bar -->
+    <div class="top-bar">
+        <div class="top-bar-slider">
+            <div class="top-bar-item">We Offer All Vaccines On All Days</div>
+            <div class="top-bar-item">Scan Facilities Available</div>
+            <div class="top-bar-item">Expert Women & Child Care Services</div>
+            <div class="top-bar-item">24/7 Emergency Care Available</div>
+            <div class="top-bar-item">Experienced Pediatricians & Gynecologists</div>
+        </div>
+    </div>
+
+    <!-- Header and Navigation -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <div class="logo-container">
+                        <img src="images/logo.jpg" alt="SG Clinic Logo" class="logo">
+                        <div class="logo-text">SG Clinic</div>
+                    </div>
+                   
+                </div>
+                
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <nav class="main-nav" id="mainNav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#women-care">Women Care</a></li>
+                        <li><a href="#facilities">Facilities</a></li>
+                        <li><a href="#health-checkups">Health Checkups</a></li>
+                        <li><a href="#appointment" id="appointmentLink">Appointment</a></li>
+                        <li><a href="#why-us">Why Us</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </nav>
+
+                <div class="contact-cta">
+                    <div class="phone-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+                            <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
+                        </svg>
+                    </div>
+                    <div class="contact-text">
+                        <div class="contact-label">Contact a Clinic</div>
+                        <div class="contact-number">98843 68200</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section with Image Slider -->
+    <section class="hero-slider">
+        <div class="slider-container">
+            <div class="slide active">
+                <img src="images/scroll1.jpg" alt="Women and Child Care">
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <h1>Comprehensive Women & Child Care</h1>
+                    <p>Providing quality healthcare services with care and compassion</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="images/scroll2.jpg" alt="Mother and Baby Care">
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <h1>Expert Maternity Care</h1>
+                    <p>Supporting you through every stage of motherhood</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="images/scroll3.jpg" alt="Child Healthcare">
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <h1>Specialized Pediatric Services</h1>
+                    <p>Caring for your child's health and development</p>
+                </div>
+            </div>
+        </div>
+        <button class="slider-prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="slider-next" onclick="moveSlide(1)">&#10095;</button>
+        <div class="slider-dots">
+            <span class="dot active" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="images/about.jpg" alt="Mother and Child" class="main-image">
+                    <div class="image-decoration"></div>
+                </div>
+                
+                <div class="about-content">
+                    <h3 class="section-subtitle">About SG Clinic</h3>
+                    <h2 class="section-title">Welcome To SG Clinic</h2>
+                    
+                    <p class="about-text">
+                        we understand the unique needs of women and children, and we are dedicated to providing comprehensive, personalized healthcare services in a nurturing environment. With a team of experienced healthcare professionals specializing in obstetrics, gynecology, pediatrics, and family medicine, we strive to ensure the well-being of every woman and child who walks through our doors.
+                    </p>
+                    
+                    <p class="about-text">
+                        Our mission is to empower women to take control of their health at every stage of life, from adolescence to menopause and beyond. We offer a wide range of services, including prenatal care, family planning, preventive screenings, and treatment for gynecological issues.
+                    </p>
+                    
+                    <div class="services-list">
+                        <div class="service-item">
+                            <span class="checkmark">✓</span>
+                            <span>Pre Pregnancy Counselling</span>
+                        </div>
+                        <div class="service-item">
+                            <span class="checkmark">✓</span>
+                            <span>Pregnancy Care</span>
+                        </div>
+                        <div class="service-item">
+                            <span class="checkmark">✓</span>
+                            <span>Infertility Treatment</span>
+                        </div>
+                        <div class="service-item">
+                            <span class="checkmark">✓</span>
+                            <span>Scans Facilities</span>
+                        </div>
+                        <div class="service-item">
+                            <span class="checkmark">✓</span>
+                            <span>New Born Baby Care</span>
+                        </div>
+                        <div class="service-item">
+                            <span class="checkmark">✓</span>
+                            <span>Vaccination</span>
+                        </div>
+                        <div class="service-item">
+                            <span class="checkmark">✓</span>
+                            <span>Child Nutrition And Development</span>
+                        </div>
+                        <div class="service-item">
+                            <span class="checkmark">✓</span>
+                            <span>Allergy And Asthma Care</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="section why-choose-section">
+        <div class="container">
+            <h2>Why Choose SG Clinic</h2>
+            <div class="why-choose-grid">
+                <div class="why-choose-card">
+                    <div class="why-icon">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <h3>Expert Doctors</h3>
+                    <p>Our team of experienced healthcare professionals specializing in obstetrics, gynecology, and pediatrics</p>
+                </div>
+                <div class="why-choose-card">
+                    <div class="why-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Compassionate Care</h3>
+                    <p>Personalized support tailored to the unique needs of individuals and families</p>
+                </div>
+                <div class="why-choose-card">
+                    <div class="why-icon">
+                        <i class="fas fa-hospital"></i>
+                    </div>
+                    <h3>Modern Facilities</h3>
+                    <p>Advanced scanning and diagnostic equipment with in-house laboratory</p>
+                </div>
+                <div class="why-choose-card">
+                    <div class="why-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Flexible Hours</h3>
+                    <p>Open Mon - Sat: 7:00 AM - 9:00 PM for your convenience</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <img src="images/logo.jpg" alt="SG Clinic Logo" class="footer-logo-img">
+                        <h3>SG Clinic</h3>
+                    </div>
+                    <p class="footer-description">
+                        Expert care for women and children, from infancy to adulthood. Compassionate support tailored to your family's unique needs. Your journey to wellness begins with us.
+                    </p>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#women-care">Women Care</a></li>
+                        <li><a href="#child-care">Child Care</a></li>
+                        <li><a href="#facilities">Facilities</a></li>
+                        <li><a href="#health-checkups">Health Checkups</a></li>
+                        <li><a href="#appointment" class="appointmentLink">Appointment</a></li>
+                        <li><a href="#why-us">Why Choose</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-services">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li><a href="#">Vaccinations</a></li>
+                        <li><a href="#">Maternity Care</a></li>
+                        <li><a href="#">Infertility Treatment</a></li>
+                        <li><a href="#">Menstrual Problems, PCOS</a></li>
+                        <li><a href="#">Contraception</a></li>
+                        <li><a href="#">Child Health Care</a></li>
+                        <li><a href="#">Nutrition & Development</a></li>
+                        <li><a href="#">Allergy And Asthma Care</a></li>
+                        <li><a href="#">Skin & Infectious Disease Care</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h3>Contact Information</h3>
+                    <ul>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>No 19, Periyar nagar, Nellikuppam Rd, opposite to Npc Mahal, puthukovil, Guduvancheri, Tamil Nadu 603202</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>sgclinic@gmail.com</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>98843 68200</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>9884838400</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>+91 9884097400</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>Copyright © 2025 – SG Clinic – All Rights Reserved.</p>
+                <p class="footer-credit">Designed By Clemence Web Solutions.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/919884368200" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- QR Code Modal -->
+    <div id="qrModal" class="qr-modal">
+        <div class="qr-modal-content">
+            <span class="qr-close">&times;</span>
+            <h2>SG Clinic Book Your Appointment</h2>
+            <p>Scan the QR code to sg clinic book your appointment</p>
+            <img src="images/qr.jpg" alt="Appointment QR Code" class="qr-code-image">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
